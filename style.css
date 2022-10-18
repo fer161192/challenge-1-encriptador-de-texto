@@ -1,0 +1,411 @@
+.abarcamiento-total{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC;
+}
+/*Usamos porcentaje porque se van acomodando a medida que lo vemos
+en otros dispositivos*/
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+} 
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #F3F5FC;
+}
+.contenedor{
+    margin: auto;
+    width: 960px;
+    height: 650px;
+    padding: 5px;
+} 
+
+.izquierda{
+    float: left;
+    width: 70%;
+    height: 70%;
+    border-radius: 24px;
+} 
+.derecha{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.derecha#imagenDerecha{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
+.derecha#texto_1{
+    width: 336px;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.derecha#texto_2{
+    width: 336px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+/*De esta forma visualizamos donde esta cada uno de los 
+paneles*/
+.logoLogo{
+    margin-top: 1%;
+    margin-left: 5%;
+    float: inherit;
+}
+.titulo{
+    float: inherit;
+    margin-left: 20%;
+}
+input#inputTexto.text-input{
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    
+}
+input#inputTexto.text-input::placeholder{
+    color: #0A3871
+}
+/*
+    1) Cuando es un class en el css va con ".class nombre"
+    2) Cuando es un id en el css va con "#id nombre"
+*/
+div#letras{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+}
+.minuscula{
+    width: 205px;
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.boton-izquierdo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+/*Width es ancho y Height es alto*/
+button#boton-encriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+button.bti{
+    width: 280px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+button#boton-desencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+button.btd{
+    width: 280px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+#copiar{
+    margin-left: 33%;
+    margin-top: 90%;
+    padding: 24px;
+    width: 40%;
+    height: 10%;
+    background: #D8DFE8;
+    border-radius: 24px;
+    display: none;
+}
+button:hover{
+    color: orange;
+    border-color: orange;
+    font-size: 20px;
+}
+button:active{
+    border-color: green;
+}
+/*Version para celulares*/
+@media screen and (max-width:480px){
+    .abarcamiento-total{
+        position: relative;
+        width: 375px;
+        height: 938px;
+        background: #F3F5FC;
+    }
+    header{
+        position: absolute;
+        width: 375px;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+    }
+    input#inputTexto.text-input{
+        position: absolute;
+        width: 343px;
+        height: 48px;
+        left: 16px;
+        top: 152px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+    }
+    input#inputTexto.text-input::placeholder{
+        color: #0A3871
+    }
+    div#letras{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        left: 16px;
+        top: 451px;
+    }
+    .minuscula{
+        width: 205px;
+        height: 18px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #495057;
+        opacity: 0.8;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .boton-izquierdo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 343px;
+        height: 158px;
+        left: 16px;
+        top: 485px;
+    }
+    button#boton-encriptar{
+       display: flex;
+       flex-direction: row;
+       align-items: flex-start;
+       padding: 24px;
+       gap: 8px;
+       width: 343px;
+       height: 67px;
+       background: #0A3871;
+       border-radius: 24px;
+       flex: none;
+       order: 0;
+       align-self: stretch;
+       flex-grow: 0;
+    }
+    button.bti{
+        width: 295px;
+        height: 19px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color:#FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    button#boton-desencriptar{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        width: 343px;
+        height: 67px;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    button.btd{
+        width: 295px;
+        height: 19px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #0A3871;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .derecha{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        position: absolute;
+        width: 327px;
+        height: 186px;
+        left: 24px;
+        top: 707px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px 
+        rgba(0, 0, 0, 0.08); 
+        border-radius: 32px;   
+    }
+    .derecha#imagenDerecha{
+        position: absolute;
+        width: 200px;
+        height: 304px;
+        left: 1032px;
+        top: 283px;
+    }
+    #texto_1{
+        width: 263px;
+        height: 58px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #343A40;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    #texto_2{
+        width: 263px;
+        height: 48px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #495057;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+}    
